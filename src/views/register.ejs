@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se na Fortify</title>
+
+    <link rel="shortcut icon" href="/images/logo-fortify-favicon.png">
+
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/form.css">
+</head>
+
+<body>
+    <main>
+        <form id="register-form">
+            <h2 id="title">Cadastro</h2>
+
+            <div class="form-control">
+                <label for="username">Nome de usuário</label>
+                <input type="text" name="username" id="username" placeholder="Um nome qualquer">
+            </div>
+
+            <div class="form-control">
+                <label for="name">Nome completo</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome completo">
+            </div>
+
+            <div class="form-control">
+                <label for="sex">Sexo</label>
+                <select name="sex" id="sex">
+                    <option value="0">Masculino</option>
+                    <option value="1">Feminino</option>
+                    <option value="2">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="form-control">
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            </div>
+
+            <div class="form-checkbox">
+                <label for="toggle-password">Mostrar senha</label>
+                <input type="checkbox" id="toggle-password">
+            </div>
+
+            <button type="submit" class="main-button">Cadastrar</button>
+
+            <a href="/" class="route-link">Já fez seu cadastro?</a>
+        </form>
+    </main>
+
+    <script src="/scripts/login.js"></script>
+</body>
+
+</html>

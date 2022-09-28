@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fafafa;
+    --black: #333;
+    --main: #f50057;
+    --background: #f6faff;
+    --grey-blue: #a1b2cd;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+body,
+button,
+input,
+textarea {
+    color: var(--black);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: clamp(14px, 1.6rem, 2vw);
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.form-control label {
+    font-size: 1.8rem;
+}
+
+.form-control input,
+.form-control select {
+    padding: 1rem;
+    background-color: var(--background);
+    border: .2rem solid var(--black);
+    border-radius: .8rem;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: var(--main);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-checkbox label {
+    user-select: none;
+}
+
+.form-checkbox input {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.main-button {
+    padding: 1rem;
+    background-color: var(--main);
+    color: var(--white);
+    font-size: 1.8rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: filter .2s;
+}
+
+.main-button:hover,
+.main-button:focus {
+    filter: brightness(90%);
+}

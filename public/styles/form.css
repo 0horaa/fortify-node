@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+form#login-form,
+form#register-form {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 60rem);
+    border-radius: 8px;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+form #title {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+.route-link {
+    color: var(--black);
+}
+
+.route-link:hover,
+.route-link:focus {
+    color: var(--main);
+    text-decoration: underline;
+}
